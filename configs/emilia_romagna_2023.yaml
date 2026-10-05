@@ -1,0 +1,29 @@
+id: "emilia_romagna_2023"
+name: "Emilia-Romagna May 2023 Flood Event"
+aoi:
+  type: "Polygon"
+  coordinates:
+    - [
+        [11.80, 44.20],
+        [12.30, 44.20],
+        [12.30, 44.60],
+        [11.80, 44.60],
+        [11.80, 44.20]
+      ]
+event_date_range:
+  start: "2023-05-16"
+  end: "2023-05-23"
+baseline_date_range:
+  start: "2023-04-15"
+  end: "2023-05-10"
+dem_path: "data/dem/emilia_romagna_copernicus30.tif"
+sensor: "sentinel1"
+polarization: "VV"
+thresholds:
+  water_threshold_db: -16.0
+  change_threshold_db: -3.0
+  hand_threshold_m: 15.0
+  slope_threshold_deg: 10.0
+permanent_water:
+  source: "jrc_occurrence"
+  occurrence_min_percent: 80.0

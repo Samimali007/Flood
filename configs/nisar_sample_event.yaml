@@ -1,0 +1,29 @@
+id: "nisar_sample_aleutian_2026"
+name: "NISAR GCOV Sample Footprint (Aleutian Track 59)"
+aoi:
+  type: "Polygon"
+  coordinates:
+    - [
+        [-179.0, 51.5],
+        [-176.5, 51.5],
+        [-176.5, 53.0],
+        [-179.0, 53.0],
+        [-179.0, 51.5]
+      ]
+event_date_range:
+  start: "2026-10-01"
+  end: "2026-10-05"
+baseline_date_range:
+  start: "2026-09-15"
+  end: "2026-09-30"
+dem_path: "data/dem/aleutian_dem.tif"
+sensor: "nisar"
+polarization: "HH"
+thresholds:
+  water_threshold_db: -18.0
+  change_threshold_db: -3.5
+  hand_threshold_m: 12.0
+  slope_threshold_deg: 8.0
+permanent_water:
+  source: "esa_worldcover"
+  occurrence_min_percent: 75.0
